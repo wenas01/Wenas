@@ -1,1 +1,26 @@
+procedimientos:
+
+Los procedimientos son cononocidos actualmente como funciones
+Ejecutar un procedimiento es llamar a una rutina lo que consiste en efectuar los siguiente pasos :
+
+- COLOCAR ARGUMENTOS en retgistros conocidos al procedimiento(registros $a0 - $a-3)
+- CEDE EL CONROLL al procedimiento, guardando la direccion de retorno("ra)
+- EJECUTAR el procedimiento
+- COLOCAR RESULTADOS en registros conocidos($v0 - $v1)
+- RETORNAR el control a quien llamo (instruccion jr $ra)
+
+jal proc #jumpo to loc 'proc' and link
+         #'link' meand save the return
+         #address
+
+El procedimiento guarda los valores de las variables que se van a usar durante el procedimiento para poder trabajar con ellas y luego dejarlas como estaban antes
+
+Save,etc
+{ 
+
+  procedimiento
+
+} 
+restore
+
 
